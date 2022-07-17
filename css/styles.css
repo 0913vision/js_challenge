@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+.hidden {
+	display: none;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+#all {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	align-items: center;
+	justify-content: center;
+}
+
+#clock {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 8rem;
+	margin-top: 11rem;
+	margin-bottom: auto;
+}
+
+#greeting {
+	font-family: 'Roboto', sans-serif;
+	animation: fadein 3s;
+	-moz-animation: fadein 3s; /* Firefox */
+	-webkit-animation: fadein 3s; /* Safari and Chrome */
+	-o-animation: fadein 3s; /* Opera */ 
+	font-weight: 300;
+	font-size: 4rem;
+}
+
+#weather {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	padding-top: 1rem;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+button {
+	background-color: #fa5a5a;;
+	border-radius: 50%;
+	height: 1.4rem;
+	width: 1.4rem;
+	border-style: none;
+	line-height:200px;
+}
+
+li {
+	list-style: none;
+    margin-bottom: 8px;
+    font-size: 1.7rem;
+	font-family : 'Nanum Gothic';
+	font-weight: 400;
+	letter-spacing: -0.05rem;
+	
+}
+
+li>span {
+	padding-left: 1rem;
+}
+
+form>input {
+	font-family: 'Roboto', sans-serif;
+	-webkit-transition: 0.5s; 
+	transition: 0.5s;
+	font-size: 1.4rem;
+
+}
+form>input:focus {
+	border: solid 0.4rem tomato;
+}
+
+#login-form {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+#loginInput {
+	background-color: #ffffff;
+}
+
+#loginInput:focus {
+	border: solid 0.4rem #4CBB17;
+}
