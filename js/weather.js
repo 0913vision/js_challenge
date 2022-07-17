@@ -11,12 +11,11 @@ navigator.geolocation.getCurrentPosition(
 			const weather = document.querySelector("#weather span:first-child");
 			const city = document.querySelector("#weather span:last-child");
 			city.innerText = d.name;
-			weather.innerText = `${d.weather[0].main} / ${d.main.temp}`;
-			console.log(d);
+			weather.innerText = `${d.weather[0].main} / ${(d.main.temp-273.15).toFixed(2)} ℃`;
 		});
 	},
 	() => {
-  	alert("Can't find you. No weather for you.")
+  		alert("Can't find you. No weather for you.")
 	}
 )
 
